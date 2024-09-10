@@ -1,2 +1,2 @@
 @echo off
-python console.py
+python converter.py
