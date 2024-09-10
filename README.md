@@ -8,9 +8,9 @@ Converts a video file to ASCII in the command prompt. [Like those videos you see
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- - For this to work you need Python, which is in the files already, run the "Python" file, and this will bring you to the Python download.
+ - For this to work you need Python!
 
- - [Alternative Python Link:](https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe)
+ - [Python Link:](https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe)
 
  - You will also need Visual Studio Code, so you can install the scripts dependencies.
 
