@@ -28,7 +28,7 @@ Converts a video file to ASCII in the command prompt. [Like those videos you see
 
  - You do not need a good computer to run this script, all the frame processing happens before the video plays in the console.
 
- - If you open the console and nothing shows up, its just blank, that is nowmal, leave it alone so it can process the video frames.
+ - If you open the console and nothing shows up, or you got an error, this is because you named your video file wrong, its just blank, that is nowmal, leave it alone so it can process the video frames. (THE VIDEO SHOULD BE AN MP4, NAMED "video")
 
  - After every frame has been processed, the script will start the console playback and open your video at the same time.
 
