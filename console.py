@@ -19,7 +19,10 @@ def preprocess_frames(video_file):
         print(f"Error: Unable to open video file {video_file}")
         return frames
 
-    while True:
+    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    print("Processing frames...")
+    
+    for i in range(frame_count):
         ret, frame = cap.read()
         if not ret:
             break
@@ -29,8 +32,14 @@ def preprocess_frames(video_file):
         image = scale_image(image)
         ascii_art = convert_to_ascii(image)
         frames.append(ascii_art)
-    
+
+        # Update progress bar
+        progress = (i + 1) / frame_count * 100
+        sys.stdout.write(f'\rProcessing frames: {progress:.2f}%')
+        sys.stdout.flush()
+
     cap.release()
+    print("\nFrame processing completed.")
     return frames
 
 def scale_image(image, new_width=WIDTH):
@@ -64,10 +73,8 @@ def play_video_in_command_prompt(frames, fps, start_time):
 
 def play_video_in_window():
     if os.name == 'nt':
-
         subprocess.Popen(['start', VIDEO_FILE], shell=True)
     elif os.name == 'posix':
-
         subprocess.Popen(['xdg-open', VIDEO_FILE])
     else:
         print("Unsupported OS")
@@ -89,7 +96,6 @@ def process_video():
 
 def main():
     if os.path.isfile(VIDEO_FILE):
-
         processing_thread = threading.Thread(target=process_video)
         processing_thread.start()
         processing_thread.join()
@@ -100,11 +106,9 @@ def main():
         time.sleep(1)
 
         start_time = time.time()
-
         play_video_in_command_prompt(frames, fps, start_time)
 
         video_window_thread.join()
-
     else:
         print(f"No video file named {VIDEO_FILE} found.")
 
