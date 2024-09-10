@@ -14,7 +14,7 @@ Converts a video file to ASCII in the command prompt. [Like those videos you see
 
  - You will also need Visual Studio Code, so you can install the scripts dependencies.
 
- - Open the Python script (the file named "console") in the zip you just downlaoded from this repository, then click "TERMINAL" at the top left, and click "NEW TERMINAL"
+ - Open the Python script (the file named "converter") in the zip you just downlaoded from this repository, then click "TERMINAL" at the top left, and click "NEW TERMINAL"
 
  - Inside that terminal (the new box at the bottom of VS Code) enter this command.
 
