@@ -33,7 +33,6 @@ def preprocess_frames(video_file):
         ascii_art = convert_to_ascii(image)
         frames.append(ascii_art)
 
-        # Update progress bar
         progress = (i + 1) / frame_count * 100
         sys.stdout.write(f'\rProcessing frames: {progress:.2f}%')
         sys.stdout.flush()
