@@ -8,8 +8,8 @@ import time
 from PIL import Image
 
 ASCII_CHARS = "@%#*+=-:. "
-WIDTH = 140
-HEIGHT = 40
+WIDTH = 209
+HEIGHT = 51
 VIDEO_FILE = "video.mp4"
 
 def preprocess_frames(video_file):
