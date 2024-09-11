@@ -2,6 +2,8 @@
 Converts a video file to ASCII in the command prompt. [Like those videos you see of Bad Apple played in various things](https://youtu.be/6zs6S_I5gH8).
 
 
+ - THIS IS MADE FOR 1080P FULL SCREEN TERMINAL!
+
  - YOU NEED THE VIDEO YOU WANT TO CONVERT TO BE IN THE SAME FOLDER AS THE SCRIPT IS IN OR IT WILL NOT WORK!
 
  - THE VIDEO IN THE FOLDER SHOULD BE HAMED "video" THIS IS THE FILE NAME THAT THIS SCRIPT TARGETS!
